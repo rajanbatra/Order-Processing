@@ -20,15 +20,15 @@ public class Order {
     public Integer payment_id;
 
     @Column(name = "order_date_created")
-    public Date order_date_created;
+    public String order_date_created;
 
     @Column(name = "order_date_modified")
-    public Date order_date_modified;
+    public String order_date_modified;
 
     @Column(name = "order_delivery_method")
     public String order_delivery_method;
 
-    public Order(int order_id, int customer_id, int payment_id, Date order_date_created, Date order_date_modified, String order_delivery_method) {
+    public Order(int order_id, int customer_id, int payment_id, String order_date_created, String order_date_modified, String order_delivery_method) {
         this.customer_id = customer_id;
         this.customer_id = customer_id;
         this.payment_id = payment_id;
